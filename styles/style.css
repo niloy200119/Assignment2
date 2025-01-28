@@ -2,8 +2,8 @@ body {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
   font-style: normal;
-  margin: 25px 100px;
   font-variation-settings: "width" 100;
+  margin: 0 0;
 }
 button {
   font-family: "Quicksand", serif;
@@ -14,6 +14,12 @@ button {
 .blk-button {
   padding: 17px 34px;
   border-radius: 8px;
+}
+header {
+  margin: 25px 100px;
+}
+section {
+  padding: 25px 100px;
 }
 
 nav {
@@ -76,8 +82,16 @@ a {
   background-image: url(../assets/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
 }
+/* .stories-grad{
+    background: linear-gradient(to top, #39bcf8, white);
+} */
+.stories-grad {
+    background: linear-gradient(to top, rgba(57, 188, 248, 0.2), white), url(../assets/bg.png);
+    background-repeat: no-repeat;
+}
+
+
 .same-head {
   font-weight: bold;
   font-size: 40px;
@@ -87,12 +101,21 @@ a {
   display: flex;
   justify-content: space-between;
   gap: 15px;
+  text-align: center;
 }
 .pillars {
   border-radius: 16px;
-  background-color: #ffffff;
   padding: 20px;
   margin-bottom: 20px;
+}
+.pillars1{
+    background: linear-gradient(to bottom, #e2f2fb, white);
+}
+.pillars2{
+    background: linear-gradient(to bottom, #f9e2e2, white);
+}
+.pillars3{
+    background: linear-gradient(to bottom, #f8e2f9, white);
 }
 .pillars-dsp {
   display: flex;
@@ -107,68 +130,99 @@ a {
   border-radius: 50%;
   font-size: 25px;
   padding: 12px 18px;
+  align-items: center;
 }
-footer{
-    color: white;
-    background-color: #01ACFD;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 16px;
+.ind {
+    text-align: center;
+}
+footer {
+  color: white;
+  background-color: #01acfd;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 25px 100px;
 }
 
-.footer-logo{
-    display: flex;
+.footer-logo {
+  display: flex;
 }
 
 .lst-end {
+  margin: auto;
+}
+.lst-end > div {
     display: flex;
+    gap: 20px;
+}
+.school {
+    margin: auto;
 }
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    gap: 20px;
-    max-width: 1000px;
-
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  /* max-width: 1000px; */
+  padding: 20px;
 }
 .grid-item {
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .grid-item.large {
-    grid-column: span 2;
-    grid-row: span 2;
-    display: flex;
-    flex-direction: column;
+  grid-column: span 2;
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
 }
 
 .grid-item img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .content {
-    padding: 15px;
+  padding: 15px;
 }
 .stories-content {
-    position: relative;
+  position: relative;
+}
+.date{
+    background-color: #3CD8E8;
+}
+.datev2{
+    background-color: #95B226;
+}
+.datev3{
+    background-color: #5D58F0;
 }
 .stories-date {
+  position: absolute;
+  top: -36px;
+  left: 16px;
+}
+.stories-datev2 {
     position: absolute;
-    top: -36px;
+    top: -56px;
     left: 16px;
+  }
+.stories-date > p, .stories-datev2 > p {
+  border: 10px;
+  padding: 8px 16px;
+  border-radius: 64px;
+  color: white;
 }
-.stories-date > p {
-    border: 10px;
-    background-color: #01ACFD;
-    padding: 8px 16px;
-    border-radius: 64px;
-    color: white;
+
+.stories, .stories-content > h4 {
+  margin: 16px 32px;
 }
-.stories {
-    margin: 16px 32px;
+.school{
+    justify-content: left;
+    text-align: left;
+    align-items: center;
+    gap: 20px;
 }
