@@ -15,17 +15,17 @@
   <body>
     <header>
       <nav>
-        <div>
+        <div class="nav-logo">
           <img src="assets/logo.png" alt="" />
           <h3>SCHOOL</h3>
         </div>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Facilities</a></li>
-          <li><a href="">Admission</a></li>
+        <ul class="nav-links">
+          <li><a href="" style="color: orange; font-weight: bold">Home</a></li>
+          <li><a href="" style="color: skyblue">About</a></li>
+          <li><a href="" style="color: #05d4df">Facilities</a></li>
+          <li><a href="" style="color: #5d58ef">Admission</a></li>
         </ul>
-        <button><a href="">Contact</a></button>
+        <button class="nav-button">Contact</button>
       </nav>
       <div class="banner">
         <div>
@@ -37,13 +37,13 @@
             With the courage, Confidence, Creativity and Compassion to make
             their Unique Contribution in a Diverse and Dynamic World.
           </p>
-          <button class="blk-clr">Enroll Now</button>
+          <button class="blk-clr blk-button">Enroll Now</button>
         </div>
         <img class="banner-pic" src="assets/hero-kids.png" />
       </div>
     </header>
     <main>
-      <section>
+      <section class="standard">
         <h3 class="same-head">Standard Curriculum</h3>
         <div class="pillars-container">
           <div class="pillars">
@@ -53,7 +53,7 @@
               A nurturing start where children explore the basics of learning,
               socializing, and creativity in a playful environment.
             </p>
-            <button>Read More</button>
+            <p style="color: #64c8ff; font-weight: bold">Read More</p>
           </div>
           <div class="pillars">
             <img src="assets/elementary.png" alt="" />
@@ -62,7 +62,7 @@
               The foundation for academic and social skills, focusing on core
               subjects like math, science, reading, and teamwork.
             </p>
-            <button>Read More</button>
+            <p style="color: #f0aa00; font-weight: bold">Read More</p>
           </div>
           <div class="pillars">
             <img src="assets/middle.png" alt="" />
@@ -72,7 +72,7 @@
               explore personal interests, and navigate the early challenges of
               adolescence.
             </p>
-            <button>Read More</button>
+            <p style="color: #8700ff; font-weight: bold">Read More</p>
           </div>
         </div>
         <div>
@@ -80,26 +80,25 @@
           <button class="indicator">></button>
         </div>
       </section>
-      <section>
+      <section class="standard">
         <h3 class="same-head">Our Stories</h3>
-        <div>
-          <div class="">
+        <div class="grid-container">
+          <div class="grid-item large">
             <img class="str1-pic" src="assets/story-1.png" alt="" />
             <div class="stories-content">
-              <h4 class="stories-title">
-                A fun toddler coloring training on classroom
-              </h4>
-              <p class="pillars-dsp">
-                A fun toddler coloring training in the classroom is a creative
-                way to engage young learners. Kids explore their imagination by
-                coloring animals, shapes, and objects. It helps improve their
-                fine motor skills and hand-eye coordination. Teachers can guide
-                them with exciting themes and stories. It’s a joyful and
-                educational activity that builds focus and confidence!
-              </p>
-            </div>
-            <div class="stories-date">
-              <p>November 19, 2019</p>
+              <div class="stories-date">
+                <p>November 19, 2019</p>
+              </div>
+              <div class="stories">
+                <h4 class="stories-title">
+                  A fun toddler coloring training on classroom
+                </h4>
+                <p class="pillars-dsp">
+                  Beautiful branding for changes by Never Now in Australia.
+                  changes is a platform for open discussion in an inclusive and
+                  collaborative environment, providing the...
+                </p>
+              </div>
             </div>
           </div>
 
@@ -149,14 +148,18 @@
             </div>
           </div>
         </div>
-        <button class="blk-clr">View All</button>
+        <button class="blk-clr blk-button">View All</button>
       </section>
     </main>
     <footer>
-      <!-- <div> -->
       <div>
-        <img src="assets/logo.png" alt="" />
-        <h3>Kids Education</h3>
+        <div class="footer-logo">
+          <img class="footer-pic" src="assets/logo.png" alt="" />
+          <h3>
+            Kids<br />
+            Education
+          </h3>
+        </div>
         <p>
           Kids' education lays the foundation for their future growth and
           success. It fosters creativity, critical thinking, and social skills
@@ -184,7 +187,6 @@
           <div><img src="assets/google+.png" /></div>
         </div>
       </div>
-      <!-- </div> -->
     </footer>
   </body>
 </html>
