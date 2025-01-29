@@ -11,6 +11,16 @@ button {
   font-weight: bold;
   color: white;
 }
+.announcement {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff6600;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
 .blk-button {
   padding: 17px 34px;
   border-radius: 8px;
